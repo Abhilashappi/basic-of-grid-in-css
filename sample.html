@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HRX Text Overlay</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    img {
+      width: 100%; /* Adjust width as needed */
+      height:500px;
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 24px;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="hrx-image.jpg" alt="HRX Image" width="100%">
+    <div class="text-overlay">
+      <h2>HRX TRANSFORMATIONS</h2>
+      <p>KABIR AND BEYOND</p>
+      <p>ON THE NEXT ADVENTURE</p>
+      <p>The journey is often is more memeorable than the destination</p>
+      <p>No matter what you do, #turnitup and don't forget to thrive while you survive</p>
+      <p>You've seen a glimpse now here's the real deal</p>
+    </div>
+  </div>
+</body>
+</html>

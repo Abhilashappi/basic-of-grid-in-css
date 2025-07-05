@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choco-Lux</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+
+    margin: 10px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    border: 2px solid white;
+    box-shadow: 2px 5px 7px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+nav ul:nth-child(1) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    display: flex;
+}
+
+nav>ul >li {
+    margin-left: 40px;
+     display: flex;
+    justify-content:space-around;
+    align-items: center; 
+    align-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: flex;
+    justify-content:space-between;
+}
+
+.search-icon {
+    font-weight: bold;
+}
+
+/* .hero {
+
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden; */
+/* } */
+
+/* .hero::before {
+    content: "";
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width:500px;
+    height: 150px; */
+
+
+
+.hero-content>img {
+    height: 300px;
+    max-width: 900px;
+    margin-bottom: 900px;
+    margin: 0px;
+    padding-bottom: 390px;
+    position: relative;
+    bottom: 20px;
+
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 700px;
+    font-family:'montserrat'sans-serif;
+}
+
+.hero p {
+    color: aliceblue;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-style: italic;
+    position: relative;
+    bottom: 800px;
+    font-size: 150px;
+}
+#box{
+    position: absolute;
+    bottom:100px ;
+    left: 800px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #704214;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    bottom: 600px;
+    left: 300px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.about{
+    margin-top: 200px;
+    position: relative;
+    bottom: 500px;
+    left: ;
+    font-style: italic;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    border: 2px solid lightblue;
+    box-shadow: 2px 3px;
+   
+    
+}
+div>div>p:nth-child(2){
+    text-align: justify;
+    width: 80%;
+    left: 20px;
+}
+div>div>img:nth-child(1){
+    background-size: 00px 1000px;
+    position: relative;
+    right: 200px;
+    top: 20px;
+    
+}
+.container {
+            position: relative;
+            bottom: 450px;
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid chocolate;
+        
+        }
+        h1 {
+            text-align: center;
+            color: #663300;
+        }
+        p {
+            text-align: center;
+            color: #999;
+            margin-bottom: 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            background-color:transparent;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .product:hover {
+        background-color: #772200;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            position: relative;
+            left: 11px;
+            background-color: white;
+        }
+        .product:hover img {
+            transform: scale(1.1);
+            background-color: #fff;
+        }
+        .product>img>#co1{
+            position: relative;
+            right:3600px;
+        }
+         h2 {
+            color:white;
+            margin-bottom: 10px;
+            display: flex;
+            justify-items: center;
+            text-align: center;
+            padding-left: 20PX;
+        }
+        .product h2 :hover{
+            color:orange;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            color:white ;
+            font-weight: bold;
+            margin-bottom: 10px;
+            
+        }
+        h2>font:hover{
+            color:orange;
+        }
+        .product-price :hover{
+        background-color: #772200;
+        font-weight: bold;
+        color:black;
+        margin-bottom: 10px;
+        border: 2px solid transparent;
+            background-color: #772200;
+            position: relative;
+            bottom: 20px;
+        }
+        .buy-button {
+            background-color:transparent;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-color: #ddd;
+            transition: background-color 0.2s ease;
+        }
+        .buy-button:hover {
+            background-color: #772200;
+            color: white;
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+            color: chocolate;
+        }
+        .nav-button {
+            background-color: #ddd;
+            color:chocolate;
+            padding: 10px 15px;
+            border: none;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        .nav-button:hover {
+            background-color: #ccc;
+        }
+        #co1{
+            padding: 20px;
+            right: 20px;
+    
+        }
+        #co2{
+            padding-top: 30px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+        }
+        #co3{
+            padding-bottom: 20PX;
+            padding-right: 20PX;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Choco-Lux</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Chocolates</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#" class="search-icon">Q</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                
+                <img src="/cssimga/client-bg.png" alt="" height="700px" width="900px">
+                
+                <h1 color="white">Chocolate</h1>
+                <p color="white">Yummy</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div id="box"><img src="/cssimga/slider-img.png" alt=""></div>
+        </section>
+        <div class="about">
+            <div id="comp">
+            <h1>About Our Compan</h1>
+            <p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web pagend web page editors now use Lorem Ipsum as their default model tex</p></div>
+            <div id="imgc">
+                <img src="/cssimga/about-img.png" alt="" width="700px">
+            </div>
+        </div>
+    </main>
+<div class="container">
+        <h1>Our chocolate products</h1>
+        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their</p>
+        <div class="products">
+            <div class="product">
+                <div id="co1"><img src="/cssimga/chocolate1.png" alt="Product 1" ></div>
+                <h2>Yummy <font style="color:white;">Chocolate</font> </h2>
+                <div class="product-price">$5.0</div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+               <div id="co2"> <img src="/cssimga/chocolate2.png" alt="Product 2" id="co2"></div>
+                <h2>Yummy <font style="color:white;">Chocolate</font></h2>
+                <div class="product-price">$5.0</div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <div id="co3"><img src="/cssimga/chocolate3.png" alt="Product 3" id="co3"></div>
+                <h2>Yummy <font style="color:white;">Chocolate</font></h2>
+                <div class="product-price">$5.0</div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="nav-button" > <font style="font-size:30px">&lt;</font></button>
+            <button class="nav-button"><font style="font-size:30px">&gt;</font></button>
+        </div>
+    </div>
+    
+</body>
+</html>

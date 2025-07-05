@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="short icon" href="https://img.favpng.com/4/22/24/apple-logo-png-favpng-C2ch79UUSnZYnvLzviDV2gxbD.jpg"type="imyage/x-icon">
+    <style>
+        body{
+            background-color:#F8F8F8;
+            margin: 0px;
+        }
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 50px 0px 0px 50px;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    line-height: 20px;
+    word-spacing: 6px;
+}
+article>div:first-child {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+article>div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 20px;
+}
+article>div>h1:nth-child(1){
+width: 50%;
+margin-top: 80px;margin-left: 50px;
+}
+article>div>div:nth-child(2){
+    width: 20%;
+    text-indent: 70px;
+    position: relative;
+    top: 70px;
+}
+
+article>div>li:nth-child(2){
+    text-indent: 20%;
+    padding-left: 10px;
+}
+#ask{
+    padding-left: 40px;
+    color: blue;
+}
+#cous{
+    position: relative;
+    top: 20px; 
+    padding-right: 10px;
+}
+#visit{
+    padding-left: 42px;
+    color: blue;
+}
+#namg{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px 20px 0px 20px;
+position: relative;
+top: 370px;
+
+}
+/* #namg1{
+display: flex;
+position: relative;
+top: 370px;
+
+}
+#namg1>li{
+    width: 7%;
+    padding: 0px 10px 0px 5px;
+    margin-left: 3px;
+    position: relative;
+    left: 27px;
+}
+#namg>li{
+    width: 5%;
+    padding: 0px 20px 0px 30px;
+    margin-left: 0px;
+    position: relative;
+    left: 20px;
+} */
+h3{
+    position: relative;
+    top: 400px;
+}
+h2{
+    font-size: 13px;
+    position: relative;
+    color: darkslategrey;
+    left: 10px;
+    bottom: 5px;
+    
+}
+#namg>div{
+    padding: 0px 20px 0px 20px ;
+}
+img{
+    border-radius: 30%;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <li><a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEiklEQVRYha2XW2wUVRzGf7OX2SVt2d1ut11cMrVkt4XAA0oLiURC4UHI8iDpi4oJobXFRjCRRAJKTBDpW8VwEVGIwcjFd0OCSRHKMxEoCbSYmm7YsL1QdrdAZ/Yy40OnWNqZ7QzyPc75zv/79uw5/4tw+/ZdbOI14E0gBpTr354A94G/gKSdYC6LvAjQCrzvdruWeb1ePB4Rh8MBgKqqKEoOWZbJ5wv3gAvAGStmhHlOwA98DXRUV1d5/P6FeDxiyYCKkiOdzjIyMqYAPwJfAemXMbABOBcKBcM1NVUIglBSeDY0TWN4eIzR0Ucp4EOgx4jnMNnfAfwhSZFwOByyLQ4gCALhcAhJioSBy8BOqwY6Kyv9p2Kx150+X4UlMVVVOX/+At3d385Z8/kqiMXqnJWV/h+AzvkMbASOBYMBvF6vJXFZlmltbWPfvv309fUZcrxeD8FgAOCYrmFowA+ck6SI0+v1WBIHOHr0GFeu/AnA9u3bTXlerwdJijiBX3WtOQYOhULBGqvHDlO//vTpMwDs2vUJzc3rS/J9vgpCoWCYqZcF/PcKJOD+ihUN4nwXbnDwH1S1SF1dHU6nkyNHvqOpqZFoNMrDhykqKwPU1taa7tc0jTt3+nPAEiA5nYh2VFdXlRTv7b1Od3c3fX13UFWVhoZ64vE4tbUSZ8/+Qm/vdSYnJxFFkbVr3+LAgS+JxWJz4giCQHV1lTgyMvYRcHD6BO7W1y9ZapZkrl69xo4drRSLxZKnMxOxWIxLl37H45l7nxQlx8DAYD+w1AEsdrtdpuJPnz5l//4vbImXlZXR1XUYUTSO6fGIuN2uBmCxA1hZ6sldu9ZLMmmrvtDR0c6aNatLJjBdc6UDiJXK7zdu3LAlDrB586Z5ObpmvQOomK5qRpiYmLAlLgiCpSSma5abK+sIBAK2DGiaRn//gGW+A5hQVdWUsHz5clsGAI4fP0GhUCjJ0TWfOID7ipIzJTY1NVquC9O4desW7e07SSQSphxdc8AB3JRl2ZS4aNEi1q1725YBgJ6enuc1wgi65k0H8CCfL9wrdQqdnR/bNhAIBNi69V3DNUXJkc8XBoAH05fwYjqdNQ22atUqWlpabBnYu/dzfD6f4Vomk4WpvvF5Nfx5ZGQsr2maacBDhw4SjUYticfjcbZt+8BwTW/VcsBPAM7Ozl0AGaBG01hdXl5muFEURTZu3MDg4CAAzc3r2bPnM9ra2mhsbESWZVwuF1u2xOnqOozLZdxwDw+P8ezZ5EngN3ixKfUD9yQpYqsnsINMZoJEIpkClqF3yjMTURrYlkgki7KsvHJxWVZIJJJFpjrk52367EzYA+x+9Ogxr9KELCuMjz8G2M2s9tzojzo5Pp5Wx8fTJyQpYrkzNkM2O8HQULIIfAqcnL1uVgtOAe8kEslUKjVKqddhBk3TSKVGGRpKpoBNwPdGPCuj2TdAe01NlejzWRvNMpnszKd2gJcczWYiArQD77ndroYFC7yI4ovDaS6XY3JSJp8v9AMXdfH/PZwaYTHwBhAFFurfssDfTI3nD+wE+xfxCKNpO+N8NAAAAABJRU5ErkJggg==" alt="" width="40px"></a></li>
+        <li><a href="">store</a></li>
+        <li><a href="">mac</a></li>
+        <li><a href="">ipad</a></li>
+        <li><a href="">iphone</a></li>
+        <li><a href="">watch</a></li>
+        <li><a href="">AIRpad</a></li>
+        <li><a href="">tv&Home</a></li>
+        <li><a href="">Entertainment</a></li>
+        <li><a href="">Accessories</a></li>
+        <li><a href="">Support</a></li>
+        <li><a href=""><img src="https://cdn-icons-png.freepik.com/512/5680/5680244.png" alt="" height="20px " width="20px"></a></li>
+        <li><a href=""><img src="https://static.vecteezy.com/system/resources/previews/023/642/779/non_2x/shopping-bag-icon-isolated-on-white-background-vector.jpg" alt="" height="20px " width="20px"></a></a></li>
+    </nav>
+  <article>
+    <div>
+        <p>
+            Get up to 24 months of No Cost EMI§ plus up to ₹10000.00 instant cashback§§ on selected products with eligible cards. <font style="color: blue;"><u>See offers ></u></font></p>
+    </div>
+     <div>
+       <h1><font style="font-size: 50px; color: black;">Store.</font><font style="font-size: 50px;color: gray;">The best way to buy the products you love.</font></h1> 
+        <div>
+            <li><img id="cous"src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-chat-specialist-icon-202309_AV4?wid=70&hei=70&fmt=jpeg&qlt=90&.v=1701194050329" alt="" height="30px" width="30px">Need shopping help?
+               <li id="ask"> Ask a Specialist ></li></li>
+               <br>
+            <li ><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS67BEdZHZAe4kZPyWjhsci0zIDXK6VnioKmjBwIi_NWhgQ8nXw" alt="" height="30px" width="30px" id="cous">Visit an Apple Store
+               <li id="visit"> Find one near you ></li></li>
+        </div>
+     </div>
+  </article>
+  <div id="namg">
+   <div>
+    <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-mac-nav-202410?wid=400&hei=260&fmt=png-alpha&.v=1728342368663" alt="" height="70px" width="70px">
+    <h2>mac</h2>
+   </div>
+    <div>
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-iphone-nav-202502?wid=400&hei=260&fmt=png-alpha&.v=1738706422726" alt=""  height="70px" width="70px">
+        <h2>iphone</h2>
+    </div>
+  <div>
+    <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-ipad-nav-202405?wid=400&hei=260&fmt=png-alpha&.v=1714168620875" alt=""  height="70px" width="70px">
+    <h2>ipad</h2>
+  </div>
+    <div>
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-watch-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1724165625838" alt=""  height="70px" width="75px">
+        <h2>apple watch</h2>
+    </div>
+   <div>
+    <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-airpods-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1722974349822" alt=""  height="70px" width="75px">
+    <h2>air pods</h2>
+   </div>
+    <div>
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=400&hei=260&fmt=png-alpha&.v=1625783380000" alt=""  height="70px" width="75px">
+        <h2>air bags</h2>
+    </div>
+    <div><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-appletv-nav-202210?wid=400&hei=260&fmt=png-alpha&.v=1664628458484" alt=""  height="70px" width="75px">
+    <h2>apple tv 4k</h2></div>
+    <div>
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-homepod-nav-202301?wid=400&hei=260&fmt=png-alpha&.v=1670389216654" alt=""  height="70px" width="75px">
+        <h2>home pod</h2>
+    </div>
+    <div>
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-accessories-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1723738892174" alt=""  height="70px" width="75px">
+        <h2>Accessories</h2>
+    </div>
+
+   
+
+</div>
+<div>
+    <h3><font style="font-size: 30px; color: black;">The latest.</font><font style="font-size: 30px;color: gray;"> Take a look at what’s new right now</font></h3>
+    </body>
+</html>

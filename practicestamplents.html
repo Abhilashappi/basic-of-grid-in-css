@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content:start;
+            text-align: center;
+
+        }
+        a{
+        text-decoration: none;
+
+        color: black;
+        text-align: center;
+        }
+        li{
+            list-style: none;
+            padding: 10px;
+            text-align: center;
+        }
+        #hm{
+            padding-left: 350px;
+        }
+        #hm1{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            padding-left: 250px;
+            text-align: center;
+            padding-bottom: 10px;
+            text-size-adjust: 10px;
+        }
+        header {
+            position: relative;
+            bottom:15px;
+            margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+
+    padding: ;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* Pseudo-Class: Styling First and Last Menu Items */
+nav ul li:first-child a {
+    text-transform: uppercase;
+}
+
+nav ul li:last-child a {
+    font-weight: bold;
+    color: red;
+}
+
+/* Banner Section */
+.banner {
+    background: url('https://source.unsplash.com/1600x600/?denim,fashion') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+}
+
+/* Pseudo-Class: First Child of Banner */
+.banner h2:first-child {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+/* Fashion Collection Section */
+.collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 300px;
+    background: url('https://source.unsplash.com/1600x600/?fashion,red') center/cover no-repeat; */
+}
+
+/* Pseudo-Class: nth-child Styling */
+.fashion-card h3:nth-child(odd) {
+    color: white;
+    font-size: 24px;
+}
+
+/* Pseudo-Class: Hover Effect for Buttons */
+.shop-now {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Pseudo-Class: Change Style on Hover */
+.shop-now:hover {
+    background: red;
+    color: white;
+}
+
+/* Pseudo-Class: Focus Effect */
+.shop-now:focus {
+    outline: 2px dashed red;
+}
+    </style>
+</head>
+<body>
+
+    <div>
+        <nav>
+            <li><a href=""><img src="https://c8.alamy.com/comp/2R4YFJ6/menu-icon-vector-web-menu-icon-hamburger-menu-symbol-2R4YFJ6.jpg" alt="" height="30px" width="30px"></a></li>
+            <li><a href="">Sustainability</a></li>
+            <li><a href="">Customer Service</a></li>
+            <li><a href="">Newsletter</a></li>
+            <section id="hm">
+                <li><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/1200px-H%26M-Logo.svg.png" alt=""  height="50px" width="70px"></a></li>
+            </section>
+            <section id="hm1">
+                <li><a href=""><img src="https://cdn-icons-png.flaticon.com/128/2321/2321232.png" alt="" height="20px" width="20px"></a></li>
+                <li><a href="">sign in</a></li>
+                <li><a href=""><img src="https://static-00.iconduck.com/assets.00/favourite-icon-2048x1856-ya5edecj.png" alt="" height="25px" width="25px">Favourites</a></li>
+                <li><a href=""><img src="https://static.vecteezy.com/system/resources/thumbnails/002/205/906/small/shopping-bag-icon-free-vector.jpg" alt="" height="25px" width="25px" >shoping bag</a></li>
+
+            </section>
+           
+        </nav>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Ladies</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Baby</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section class="banner">
+            <h2>The ultimate celebration of denim</h2>
+            <p>Explore the curation.</p>
+        </section>
+    
+        <section class="collection">
+            <div class="fashion-card">
+                <h3>Red Bohemia</h3>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+        </section>
+
+    </div>
+
+    <header class="Awxw nEI2" style="background-image: url(&quot;https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/global_campaigns/season_09/men/3039u/3039U-jeans-banner-3x1.jpg]&amp;scale=size[960]&amp;sink=format[jpeg],quality[80]&quot;);"><h3 class="bw1R NeQK t1Jk eHs_">The ultimate celebration of denim </h3><p class="J3fj NeQK">Explore the curation.</p><button class="CGae mYRh __5DXf dYW2 KAbe ufZS NeQK NeQK" aria-controls="multiplecta_links" aria-expanded="true" title="Close" type="button"><svg class="__2OnJ ljoJ" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false"><path d="M2 12h20v1H2z"></path></svg><span class="x_nB D1BA lV7j">Close</span></button></header>
+
+
+
+
+
+<!-- 
+    <article class="dgCg js-pricemodule-positioning">
+        <div data-testid="next-image" class="sAlY __2qyi TD0w __4AMV"><span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+        <img alt="Campaign image" tag="div" imagetype="TEASER_IMAGE" sizes="100vw" srcset="https://image.hm.com/content/dam/global_campaigns/season_01/divided/ds11g/DS11G-1x1-1.jpg?imwidth=264 264w, https://image.hm.com/content/dam/global_campaigns/season_01/divided/ds11g/DS11G-1x1-1.jpg?imwidth=396 396w, https://image.hm.com/content/dam/global_campaigns/season_01/divided/ds11g/DS11G-1x1-1.jpg?imwidth=564 564w, https://image.hm.com/content/dam/global_campaigns/season_01/divided/ds11g/DS11G-1x1-1.jpg?imwidth=657 657w, https://image.hm.com/content/dam/global_campaigns/season_01/divided/ds11g/DS11G-1x1-1.jpg?imwidth=768 768w, https://image.hm.com/content/dam/global_campaigns/season_01/divided/ds11g/DS11G-1x1-1.jpg?imwidth=820 820w, https://image.hm.com/content/dam/global_campaigns/season_01/divided/ds11g/DS11G-1x1-1.jpg?imwidth=1260 1260w, https://image.hm.com/content/dam/global_campaigns/season_01/divided/ds11g/DS11G-1x1-1.jpg?imwidth=1536 1536w" src="https://image.hm.com/content/dam/global_campaigns/season_01/divided/ds11g/DS11G-1x1-1.jpg?imwidth=1536" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: fill; object-position: 50% 50%;" height="100px" width="90px"></span>
+        <div class="_HEM"><div class="Vy9z __5YKA __7LH7">
+            <div class="__052_ __1lB_ __5YKA"><h2 class="_fd4 jY1E D053">Red bohemia</h2><a class="x_nB D1BA lV7j" href="/en_in/women/seasonal-trending/denim.html">Shop now</a>
+        </div>
+    </div>
+</div>
+</div>
+</article> -->
+</body>
+</html>

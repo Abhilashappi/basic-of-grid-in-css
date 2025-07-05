@@ -1,0 +1,142 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Constellations</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.constellations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.item {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.box {
+    background: #444;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Logo</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Gallery</a>
+                <a href="#">Help</a>
+            </nav>
+        </header>
+        
+        <section class="constellations">
+            <div class="item">
+                <img src="https://media.istockphoto.com/id/1133264756/vector/orion-the-hunter-constellation-on-a-starry-sky-illustration.jpg?s=612x612&w=0&k=20&c=ojvx9EwT9U2ddZfqUokruGArOGJarT0JZYpcvwAb3d4=" alt="Constellation 1">
+                <p>Orion - The Hunter</p>
+            </div>
+            <div class="item">
+                <img src="https://qph.cf2.quoracdn.net/main-qimg-d7f5e1c4332f421141b97b86a59f5364-lq" alt="Constellation 3">
+                <img src="" alt="Constellation 2">
+                <p>Ursa Major - The Great Bear</p>
+            </div>
+            <div class="item">
+                <p>Leo - The Lion</p>
+            </div>
+            <div class="item">
+                <img src="" alt="Constellation 4">
+                <p>Scorpius - The Scorpion</p>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="box">
+                <h2>Constellation Facts</h2>
+                <p>Learn about the different constellations and their stories.</p>
+            </div>
+            <div class="box">
+                <h2>Stargazing Tips</h2>
+                <p>Find the best time and place to see constellations in the night sky.</p>
+            </div>
+            <div class="box">
+                <h2>History</h2>
+                <p>Discover how ancient civilizations interpreted the stars.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Astro Constellations. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

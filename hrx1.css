@@ -1,0 +1,139 @@
+
+body {
+    height:100px;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0; 
+  }
+  
+  .container {
+    max-height: 4000px;
+    max-width: 4000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; 
+    font-weight: bold;
+  }
+  
+  
+  .progress-bar {
+    height: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #007bff; 
+    border-radius: 5px;
+  }
+  
+  
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .info-item {
+    text-align: center;
+  }
+  .info-label {
+    font-size: 14px;
+    color: #666;
+  }
+  .info-value {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  
+  .intensity-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  
+  .benefit-section {
+    margin-bottom: 20px;
+  }
+  .benefit-section h2 {
+    margin-bottom: 10px;
+  }
+  .benefit-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .benefit-section li {
+    margin-bottom: 5px;
+  }
+  
+  
+  .workout-session {
+    margin-bottom: 20px;
+  }
+  .workout-session h2 {
+    margin-bottom: 10px;
+  }
+  .session-timeline {
+    height: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .session-segment {
+    float: left;
+    height: 100%;
+  }
+  .session-segment:nth-child(1) {
+    background-color:yellow; 
+  }
+  .session-segment:nth-child(2) {
+    background-color:blue; 
+  }
+  .session-segment:nth-child(3) {
+    background-color:green; 
+  }
+  .session-segment:nth-child(4) {
+    background-color:gray; 
+  }
+  .session-segment:nth-child(5) {
+    background-color:red; 
+  }
+  .session-labels {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .session-labels li {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  
+
+  
+  
+  .book-class {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

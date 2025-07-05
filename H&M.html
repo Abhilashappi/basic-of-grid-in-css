@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H&M Inspired Layout</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .left-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .left-header a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .right-header ul {
+      list-style: none;
+      /* Remove default list styling */
+      margin: 0;
+      padding: 0px;
+      display: flex;
+      align-items:start;
+    }
+
+    .right-header li {
+      margin-left: 15px;
+    }
+
+    .right-header a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    nav ul {
+      /* Updated selector for nav ul */
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .banner {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .banner h2 {
+      margin: 0;
+    }
+
+    .banner p {
+      margin: 10px 0;
+    }
+
+    .banner a {
+      text-decoration: none;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .main-content {
+    height: 700px;
+    width: 900px;
+    margin-top: 2px;
+    margin-left: 280px;
+
+      background-image: url("https://www2.hm.com/content/dam/global_campaigns/season_01/divided/ds11g/DS11G-3x2-1.jpg");
+      background-repeat: no-repeat;
+         background-size: 1000px 650px; 
+
+    }
+
+    .content-section {
+      width: 80%;
+      text-align: center;
+      color:aliceblue;
+      position: relative;
+      right: 100px;
+      top: 400px;
+    font-size: larger;
+    }
+
+    .content-section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .content-section h2 {
+      margin-top: 20px;
+    }
+
+    .content-section a {
+      text-decoration: none;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    /* Pseudo-classes for hover effects */
+    nav a:hover,
+    .banner a:hover,
+    .content-section a:hover {
+      opacity: 0.8;
+    }
+    .jean{
+        height: 200px;
+        width: 100vh;
+        position: absolute;
+        bottom: 500px;
+    }
+    #black>div:first-child{
+    
+        position: absolute;
+        left: 260px;
+    }
+
+    #black{
+
+    position: relative;
+    bottom: 40px;
+    }
+#black>div:nth-child(2){
+    position: absolute;
+    top: 200px;
+    right: 790px;
+    background-color: #333 ;
+    width: 50px;
+    }  
+    #black>div>button:first-child{
+        background-color:black;
+        color: aliceblue;
+        padding-right: 20px;
+        padding-left: 20px;
+        
+    }
+    #black>div:nth-child(3){
+        position: absolute;
+        left: 290px;
+        top: 430px;
+        color: aliceblue;
+    }
+    #black>div>button:nth-child(3){
+        color: burlywood;
+        padding: 10px;
+        margin-left: 90px;
+        background-color: black;
+        border-radius: 10px;
+    }
+    #whblk{
+        position:absolute;
+        top: 1500px;
+        left: 260px;
+    }
+    #whblk>div>button:nth-child(2){
+        width: 140px;
+        position: absolute;
+        bottom: 300px;
+            left: 700px;   
+            padding: 5px;
+            border-radius: 5px;
+            color: aliceblue;
+            background-color: black;     
+    }
+    #whblk>div>h4:nth-child(3){
+        position:absolute;
+        bottom: 100px;
+        left: 280px;
+        color: aliceblue;
+    }
+    #whblk>div>p:nth-child(4){
+        position:absolute;
+        bottom: 80px;
+        left: 300px;
+        color: aliceblue;
+    }
+    #whblk>div>button:nth-child(5){
+        position:absolute;
+        bottom: 30px;
+        left: 300px;
+        padding: 20px;
+        color: aliceblue;
+        background-color: black;
+        border-radius: 10px;
+    }
+    #whblk>div>button:nth-child(6){
+        position:absolute;
+        bottom: 30px;
+        left: 400px;
+        padding: 20px;
+        color: aliceblue;
+        background-color: black;
+        border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="left-header">
+      <a href="#">Sustainability</a>
+      <a href="#">Customer Service</a>
+      <a href="#">Newsletter</a>
+      <a href="#">...</a>
+    </div>
+    <div class="logo"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-xbq6tuKY1LaGYDH-evNBAPrAeNUrZSDs9w&s" alt="" height="35px" width="35px"></a></div>
+    <div class="right-header">
+      <ul>
+        <li><a href=""><img src="https://cdn-icons-png.flaticon.com/128/2321/2321232.png" alt="" height="20px" width="20px"></a></li>
+        <li><a href="#"> Sign in</a></li>
+        <li><a href=""><img src="https://static-00.iconduck.com/assets.00/favourite-icon-2048x1856-ya5edecj.png" alt="" height="20px" width="20px"></a></li>
+        <li><a href="#">Favourites</a></li>
+        <li><a href=""><img src="https://static.vecteezy.com/system/resources/thumbnails/002/205/906/small/shopping-bag-icon-free-vector.jpg" alt="" height="25px" width="25px" ></a></li>
+        <li><a href="#">Shopping bag (0)</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Ladies</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Baby</a></li>
+      <li><a href="#">Kids</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sale</a></li>
+      <li><a href="#">Search</a></li>
+    </ul>
+  </nav>
+
+  <div class="banner"style="background-image: url(&quot;https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/global_campaigns/season_09/men/3039u/3039U-jeans-banner-3x1.jpg]&amp;scale=size[960]&amp;sink=format[jpeg],quality[80]&quot;)">
+    <h2>The ultimate celebration of denim</h2>
+    <p>Explore the curation</p>
+    <a href="#">Ladies</a>
+    <a href="#">Men</a>
+    <a href="#">Baby</a>
+    <a href="#">Kids</a>
+  </div>
+
+  <div class="main-content">
+    <div class="content-section">
+        
+      <h2><font style="font-size: 70px;"><b><i>Red bohemia</i></b></font></h2>
+      <a href="#">Shop now</a>
+</div>    
+  </div>
+    <div id="black">
+     <div>
+            <li><img src="https://www2.hm.com/content/dam/global_campaigns/season_01/men/ms21lh14/MS21LH14-Jersey-3x2.jpg" alt="" height="600px" width="900px"></li> 
+        </div> 
+        <div>
+            <button><font><i><b>Rs. 3,999.00</b></i></font><span class="vHP4">Regular Fit Jersey jacket....></span></button>
+        </div>   
+        <div>
+            <h3><font style="font-size: 40px;">Sharp comfort</font></h3>
+            <p>Refined jersey looks with boxy and relaxed cuts.</p>
+            <button><font ><b><i>Shop now</i></b></font></button>
+        </div>    
+    </div>
+
+    <div id="whblk">
+        <div>
+            <li><img src="https://image.hm.com/content/dam/global_campaigns/season_01/kids/9111f/9111F-3x2-limited-edition-2025.jpg?" alt="" height="600px" width="900px"></li> 
+            <button><font><i><b>Rs. 1,499.00</b></i></font><span class="vHP4">Smocked peplum top..></span></button>
+            <h4><font style="font-size: 40px;">Limited Edition 2025</font></h4>
+            <p>Limited Edition 2025.</p>
+            
+                <button><font ><b><i>Baby</i></b></font></button>  <button><font ><b><i>Kids</i></b></font></button>
+            
+
+        </div>
+        
+
+    </div>
+
+   <!-- <header class="jean" style="background-image: url(&quot;https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/global_campaigns/season_09/men/3039u/3039U-jeans-banner-3x1.jpg]&amp;scale=size[960]&amp;sink=format[jpeg],quality[80]&quot;);"><h3 class="bw1R NeQK t1Jk eHs_"></h3> </h3><p class="J3fj NeQK"></p></header> -->
+</body>
+</html>

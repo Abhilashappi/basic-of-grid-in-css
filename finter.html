@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .loc{
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+        }
+        .loc>.add {
+display: flex;
+justify-content: space-around;
+align-items: center;
+    
+        }
+LI{
+    list-style: none;
+}
+A{
+    text-decoration: none;
+    color: aliceblue;
+}
+#loc1{ 
+position:absolute;
+left: 0px;
+}
+#loc2{
+position:absolute;
+top: center;
+}
+#mail{
+    padding-left: 1500px;
+}
+button{
+    background-color: aqua;
+}
+#hr{
+
+    color: red;
+}
+header {
+    height: 1200px;
+    background-image:url("/cssimga/hj.jpg");
+    background-repeat: no-repeat;
+    background: size 100vh;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    bottom:574px;
+    left:20px ;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 240%;
+    bottom:598px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    bottom: 800px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.hero button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #555;
+}
+#bcont{
+    background-color:darkcyan;
+}
+
+#services {
+    margin-left: 90px;
+    height: 600px;
+    width: 99%;
+    margin: 0px;
+    position: relative;
+    left: 10px; 
+    bottom:390px;
+    border: 2px solid ;/* Adds vertical padding */
+    border-top: -20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    border-color:darkcyan;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center; /* Center the content */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center; /* Centers the grid items horizontally */
+    gap: 20px; /* Adds space between grid items */
+}
+
+.service-item1 {
+    width: 28%; /* Adjust as needed */
+    background-color:darkcyan;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Center text within service items */
+}
+
+.service-item1 img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.service-item1 h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-item1 p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.service-item2 {
+    width: 28%; /* Adjust as needed */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Center text within service items */
+}
+
+.service-item2 img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.service-item2 h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-item2 p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.service-item3 {
+    width: 28%; /* Adjust as needed */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Center text within service items */
+}
+
+.service-item3 img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.service-item3 h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #007bff; /* Blue color for active dot */
+}
+
+.read-more {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color:darkcyan; /* Blue color for button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds a shadow to the button */
+}
+
+.read-more:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.about-section {
+    border-style:groove;
+    border-color: #666;
+    padding: 950px;
+    position: relative;
+    bottom:380px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 1880px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+}
+
+.content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.read-more {
+    background-color: #2c665d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    background-color: #215149;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 900px;
+    max-height: 700px;
+    object-fit: cover;
+}
+.team-section {
+    width: 100%;
+    position: relative;
+    bottom: 380px;
+    padding: 40px 470px 40px 470px;
+     /* Center the section */
+    max-width: 960px; /* Set a maximum width */
+    background-color: #fff; /* Example - REPLACE THIS */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid #ddd; /* Example border - REPLACE THIS */
+}
+
+h2 {
+    color: #007bff; /* Example heading color - REPLACE THIS */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.6; /* Improve readability */
+}
+
+
+.team-members {
+    display: flex;
+    justify-content: center; /* Center the team members horizontally */
+    gap: 20px; /* Space between team members */
+}
+
+.team-member {
+    text-align: center;
+    border: 1px solid #ddd; /* Example border - REPLACE THIS *
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow for members */
+    background-color:#215149;
+    text-decoration-color: #ffffff; /* Example member background - REPLACE THIS */
+}
+
+.team-member img {
+    width: 100%; /* Example image size */
+    height: 300px;
+
+ /* Make images circular */
+     /* Prevent image distortion */
+    margin-bottom: 10px;
+    border: 2px solid #fff; /* White border around images */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow around images */
+}
+
+.team-member h3 {
+    color:white; /* Example name color - REPLACE THIS */
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #777; /* Example title color - REPLACE THIS */
+    font-size: 0.9em;
+    border: 2px green;
+}
+
+.container1 {
+    position: relative;
+    bottom: 383px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+            width: 1900px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+        }
+        .left-section {
+            width: 900px;
+        }
+        .left-section img {
+            
+            width:1900px;
+            height:800px;
+            
+        }
+        .right-section {
+        padding-left: 90px;
+            width: 50%;
+            padding: 300px;
+        }
+        .right-section h2 {
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #submit{
+            color: #ffffff;
+        }
+
+
+
+
+/* Testimonial Section */
+.testimonial-section {
+    position: relative;
+    bottom: 400px;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+
+}
+
+.user-photo {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #004d40;
+}
+
+.testimonial-content {
+    text-align: center;
+    line-height: 20px;
+    padding-top: 30px;
+    text-indent: 50px;
+    text-size-adjust: 5px;
+
+}
+.testimonial-content>UL>.P1{
+    
+bottom:35px;
+position: relative;
+border: 70px;
+margin-bottom: 20PX;
+
+}
+/* .testimonial-content1{
+    text-align: center;
+    padding: 0 20px;
+} */
+
+.nav-button {
+    background: #004d40;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background: #00796b;
+}
+
+/* Footer Section */
+.footer {
+    position: relative;
+    bottom: 430px;
+    background: #004d40;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 14px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 5px;
+}
+
+.newsletter button {
+    background: #00796b;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.useful-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.useful-links li {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.useful-links li:hover {
+    text-decoration: underline;
+}
+
+#cd{
+    padding: 15px;
+    color:white;
+    background-color: #004d40;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="loc">
+                <!-- <div class="add">
+                    <h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTpcSORcN-zF6USFg6is4p5NTtE8Pl83Yp1_ePLUuhzhz7dPBdVAJGaAlYWGAsHJcw8zg&usqp=CAU" alt="" height="20px" width="20px">LOCATION</h1>
+                    <h2><img src="https://www.free-css.com/assets/files/free-css-templates/preview/page295/finter/assets/images/hero-bg.jpg" alt=""> Call:+01123455678990</h2>
+                </div> -->
+            <div class="add">
+                <li id="loc1"><a href=""> <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTpcSORcN-zF6USFg6is4p5NTtE8Pl83Yp1_ePLUuhzhz7dPBdVAJGaAlYWGAsHJcw8zg&usqp=CAU" alt="" height="20px" width="20px"></button> LOCATION</a></li>
+                <li id="loc2"><a href=""><button><img src="https://img.icons8.com/ios_filled/512/FFFFFF/apple-phone.png" alt="" height="20px" width="20px"></button>  Call:+01123455678990</a></li>
+                <li id="mail"> <a href=""><button><img src="https://static.vecteezy.com/system/resources/previews/005/129/860/non_2x/email-outline-icon-isolated-white-background-eps10-free-vector.jpg" alt="" height="20px" width="20px"></button>mail@domain.com</a></li>
+                <li><a href=""></a><button><img src="https://cdn.pixabay.com/photo/2017/11/10/05/04/facebook-2935402_1280.png" alt="" height="20px" width="20px"></button></li>
+                <li><a href=""><button><img src="https://cdn.pixabay.com/photo/2017/11/10/05/05/twitter-2935414_1280.png" alt="" height="20px" width="20px"></button></a></li>
+                <li><a href=""><button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcn2X_kPcKbtOpyX_IKJi9B_9oGw1qPwlmog&s" alt="" height="20px" width="20px"></button></a></li>
+            </div>
+    </nav>
+    <hr color="white"size="3px">
+    <header>
+        <nav>
+            <div class="logo">Finter</div>
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TEMA</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#"><img src="https://png.pngtree.com/png-vector/20190411/ourmid/pngtree-vector-search-icon-png-image_924820.jpg" alt="" height="20px" width="20px"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>We Provide</h1>
+        <h2>Welding Services</h2>
+        <p color="white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Calo omnis fugit, sed tempora proeemtium commod amor, No: incurandos repudiandos neque ad molestius, otque ventatis labore quae eveniet autum in.</p>
+        <button id="bcont">Contact Us</button>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>
+                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.
+            </p>
+
+            <div class="service-grid">
+                <div class="service-item3">
+                    <img src="/cssimga/ss1.png" alt="Home Welding"> 
+                    <h3>Home Welding</h3>
+                    <p>When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                </div>
+                <div class="service-item1">
+                    <img src="/cssimga/ss2.png" alt="Machine Welding" height="90px">
+                    <h3>Machine Welding</h3>
+                    <p>When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                </div>
+                <div class="service-item2">
+                    <img src="/cssimga/ss3.png" alt="Car Welding">
+                    <h3>Car Welding</h3>
+                    <p>When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <hr color="dark green">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>
+                There are many variations of passages of Lorem Ipsum available, 
+                but the majority have suffered alteration in some form, by injected humour.
+            </p>
+            <button class="read-more">Read More</button>
+        </div>
+        <div class="image-container">
+            <img src="/cssimga/ss4.jpg" alt="Welding Worker" >
+        </div>
+        <hr>
+    </section>
+    <section class="team-section">
+        <h2>Our Team</h2>
+        <p>Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam nulla mauris iaculis. Frat eget vitae malesuada, tortor tincidunt porta lorem lectus.</p>
+
+        <div class="team-members">
+            <div class="team-member">
+                <img src="/cssimga/ss5.jpg" alt="Martin Anderson">  <h3>Martin Anderson</h3>
+                <p>Supervisor</p>
+            </div>
+            <div class="team-member">
+                <img src="/cssimga/sss6.jpg" alt="Denny Butler">  <h3>Denny Butler</h3>
+                <p>Supervisor</p>
+            </div>
+            <div class="team-member">
+                <img src="/cssimga/ss7.jpg" alt="Nathan Mcpherson">  <h3>Nathan Mcpherson</h3>
+                <p>Supervisor</p>
+            </div>
+        </div>
+    </section>
+<hr>
+<div class="container1">
+    <div class="left-section">
+        <img src="/cssimga/ss8.jpg" alt="Worker Image" height="500px" width="500px">
+    </div>
+    <div class="right-section">
+        <h2>Get In Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Phone Number" required>
+            <select>
+                <option>Select Service</option>
+                <option>Welding</option>
+                <option>Fabrication</option>
+                <option>Custom Work</option>
+            </select>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="4" required></textarea>
+            <button type="submit" color="white" id="cd">SEND</button>
+        </form>
+    </div>
+</div>
+
+    <div class="testimonial-section">
+        <h2>Testimonial</h2>
+        <div class="testimonial-card">
+            <button class="nav-button left">&larr;</button>
+            <marquee behavior="" direction="">
+            <div class="testimonial-content">
+                <ul>
+                <a href=""></a><img src="/cssimga/ss9.jpg" alt="User Photo" class="user-photo">
+                        <h3>Jone Mark</h3>
+                       <li> <p> Editors now use Lorem Ipsum as their default model text, and a search for </p1></li>
+                            <li class="P1"><P>'lorem ipsum' will uncover many websites still in their infancy.</p></li>
+                        
+                </ul>
+               <ul>
+                <li><a href=""></a><img src="/cssimga/ss9.jpg" alt="User Photo" class="user-photo">
+                    <h3>Jone Mark</h3>
+                    <p> Editors now use Lorem Ipsum as their default model text, and a search for </p>
+                       <Li class="P1"> <p >'lorem ipsum' will uncover many websites still in their infancy.</p></li>
+               </ul>
+            </div>
+            <br>
+        </marquee>
+            <button class="nav-button right">&rarr;</button>
+        </div>
+        
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="company-info">
+                <h3>Finter</h3>
+                <ul>
+                    <li><p>Randomised words which don’t look even slightly believable</p></li>
+                    <li><p><p> If you are going to use a passage of Lorem Ipsum, you need to be sur</p></p></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <input type="email" placeholder="Enter Your Email">
+                <button>Subscribe</button>
+            </div>
+            <div class="services">
+                <h3>Services</h3>
+                <ul>
+                    <li><p>Randomised words which don’t look even slightly believable...</p></li>
+                    <li><p> If you are going to use a passage of Lorem Ipsum, you need to be sur</p></li>
+                </ul>
+            </div>
+            <div class="useful-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Team</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

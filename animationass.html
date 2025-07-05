@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            height: 500px;
+            max-width: 100%;
+            background-color: lightskyblue;
+            
+        }
+        .wave>#wo{
+            
+            display: flex;
+            justify-items: center;
+            position: relative;
+            top:300px;
+        }
+        .wave>#road{
+            background-color:lightskyblue;
+            position: relative;
+        transform: translate(0px ,300px);
+            
+        }
+    .sky{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .sky>#sun{
+        position: relative;
+        right: 400px;
+        animation-name:sun;
+            animation-duration:10s;
+            animation-timing-function: linear;
+            animation-delay: 5S;
+            animation-iteration-count: infinite;
+    }
+    .sky>#cloud1{
+        position: relative;
+        transform: translate(100px ,80px);
+        animation-name:cloud1;
+            animation-duration:5s;
+            animation-timing-function: linear;
+            animation-delay: 5S;
+            animation-iteration-count: infinite;
+    }
+    .sky>#cloud2{
+        animation-name:cloud2;
+            animation-duration:5s;
+            animation-timing-function: linear;
+            animation-delay: 2S;
+            animation-iteration-count: infinite;
+    }
+    .sky>#cloud3{
+        position: relative;
+        right: 690px;
+    }
+    .sky>#crow{
+        background-color: lightskyblue;
+        position: relative;
+        transform: translate(-400px ,20px);
+        right: 20px;
+    }
+    .wave>#ship2{
+        position:absolute;
+        bottom: 500px;
+        animation-name:ship2;
+            animation-duration:15s;
+            animation-timing-function: linear;
+            animation-delay: 0S;
+            animation-iteration-count: infinite;
+        
+        
+
+        
+    }
+    .wave>#ship1{
+        position: absolute;
+        bottom: 400px;
+        left: 470px;
+        animation-name:ship1;
+            animation-duration:5s;
+            animation-timing-function: linear;
+            animation-delay: 2S;
+            animation-iteration-count: infinite;
+        
+    }
+    .wave1>#car{
+        position:absolute;
+        bottom: 100px;
+        left: 1900px;
+        animation-name:car;
+            animation-duration:5s;
+            animation-timing-function: linear;
+            animation-delay: 0S;
+            animation-iteration-count: infinite;
+        
+    }
+    .wave1>#bike{
+        position:absolute;
+        bottom: 120px;
+        left: 100px;
+        animation-name:bike;
+            animation-duration:5s;
+            animation-timing-function: linear;
+            animation-delay: 2S;
+            animation-iteration-count: infinite;
+    }
+    @keyframes sun{
+            
+            5%{
+                background-color:lightskyblue;
+                position: absolute;
+                top: 5px;
+                bottom: 5px;
+                left: 5px;
+            }
+            10%{
+                background-color: lightskyblue;
+                position: absolute;
+                top: 0px;
+                bottom: 5px;
+                left: 5px;
+            }
+           
+        }
+        @keyframes cloud1{
+            
+            5%{
+                background-color:lightskyblue;
+                position: absolute;
+                top: 5px;
+                bottom: 5px;
+                left: 5px;
+            }
+            10%{
+                background-color: transparent;
+                position: absolute;
+                top: 0px;
+                bottom: 5px;
+                left: 5px;
+            }
+           
+        }
+        @keyframes cloud2{
+            
+            5%{
+                background-color:transparent;
+                position: absolute;
+                top: 5px;
+                bottom: 5px;
+                right: 5px;
+            }
+            10%{
+                background-color: transparent;
+                position: absolute;
+                top: 0px;
+                bottom: 5px;
+                right: 5px;
+            }
+           
+        }
+         @keyframes ship1{
+            
+            5%{
+                background-color:transparent;
+                position: absolute;
+                left: 0px;
+                right: 0px;
+
+            }
+            8%{
+                background-color:transparent;
+                position: absolute;
+              
+                right: 5px;
+                bottom: 400px;
+            } 
+           
+        }
+        @keyframes ship2{
+            
+            10%{
+                background-color:transparent;
+                position: absolute;
+                left: 5px;
+                right: 5px;
+                
+            }
+            5%{
+                background-color: transparent;
+                position: absolute;
+                left: 100px;
+                
+                
+            } 
+        }
+        @keyframes bike{
+            
+            5%{
+                background-color:transparent;
+                position: absolute;
+                right: 5px;
+                left: 5px;
+                
+            }
+            50%{
+                background-color: transparent;
+                position: absolute;
+                right: 5px;
+            left: 5px;
+                
+            }
+
+        }
+        @keyframes car{
+            
+            0%{
+                background-color:transparent;
+                position: absolute;
+               
+                right: 0px;
+            }
+            50%{
+                background-color: transparent;
+                position: absolute;
+                
+                 left: 500px;
+            }
+        }
+        .grass{
+            display: flex;
+            justify-content:  space-between;
+            position: absolute;
+            top: 900px;
+
+        }
+        .grass1{
+            display: flex;
+            justify-content:  space-between;
+            position: absolute;
+            left: 500px;
+            bottom: -10px;
+
+        }
+        .grass2{
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            left: 1000px;
+            bottom: 240px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="sky">
+        <div id="sun"><img src="https://cdn.pixabay.com/photo/2016/11/18/23/41/sun-1837376_640.png" alt="" height="100px" width="100px"></div>
+        <div id="crow"><img src="https://cdn.pixabay.com/photo/2016/10/25/18/06/flock-1769589_1280.png" alt="" height="150px " width="180px"></div>
+        <div id="cloud1"><img src="https://static.vecteezy.com/system/resources/thumbnails/051/956/347/small_2x/white-clouds-isolated-on-transparent-background-png.png" alt="" height="150px " width="180px"></div>
+        <div id="cloud3"><img src="https://static.vecteezy.com/system/resources/thumbnails/051/956/347/small_2x/white-clouds-isolated-on-transparent-background-png.png" alt="" height="180px " width="200px"></div>
+        <div id="cloud2"><img src="https://static.vecteezy.com/system/resources/thumbnails/051/956/347/small_2x/white-clouds-isolated-on-transparent-background-png.png" alt="" height="150px " width="180px"></div>
+        <div id="cloud2"><img src="https://cdn.pixabay.com/photo/2014/04/03/11/46/airplane-312080_1280.png" alt="" height="150px " width="180px"></div>
+        
+        <!-- <div id="ship1"><img src="https://cdn.pixabay.com/photo/2012/04/12/12/18/ship-29771_960_720.png" alt="" height="5px" width="5px">  -->
+    </div>
+    <div class="wave">
+        <div id="wo">
+            
+            <img src="https://cdn.pixabay.com/photo/2014/04/02/11/11/sand-305497_1280.png" alt="" height="500px" width="100%">
+        </div>
+        <div id="road">
+       
+            <img src="/cssimga/roads.jpg" alt="" height="260px" width="100%">
+        </div>
+        <div id="ship1"><img src="https://cdn.pixabay.com/photo/2012/04/12/12/18/ship-29771_960_720.png" alt="" height="400px" width="500px">
+            </div>
+            <div id="ship2"><img src="https://cdn.pixabay.com/photo/2012/04/12/12/18/ship-29771_960_720.png" alt="" height="100px" width="200px"></div>
+            
+    </div>
+    <div class="wave1">
+        <div id="car"> <img src="https://cdn.pixabay.com/photo/2013/07/13/11/50/car-158795_640.png" alt="" width="200px" height="150px"></div>
+            <divv id="bike"><img src="https://cdn.pixabay.com/photo/2013/07/13/11/54/chopper-158940_1280.png" alt="" width="200px" height="150px"></div>
+    </div>
+    <div class="grass">
+        <div><img src="https://cdn.pixabay.com/photo/2014/04/03/11/46/grass-312104_960_720.png" alt="" height="100px" width="60px"></div>
+        <div><img src="https://cdn.pixabay.com/photo/2014/04/03/11/46/grass-312104_960_720.png" alt="" height="100px" width="60px">></div>
+        <div><img src="https://cdn.pixabay.com/photo/2014/04/03/11/46/grass-312104_960_720.png" alt="" height="100px" width="60px">></div>
+        <div><img src="https://cdn.pixabay.com/photo/2014/04/03/11/46/grass-312104_960_720.png" alt="" height="100px" width="60px">></div>
+    </div>
+    <div class="grass1">
+        <div><img src="https://cdn.pixabay.com/photo/2014/04/03/11/46/grass-312104_960_720.png" alt="" height="100px" width="60px"></div>
+        <div><img src="https://cdn.pixabay.com/photo/2014/04/03/11/46/grass-312104_960_720.png" alt="" height="100px" width="60px">></div>
+        <div><img src="https://cdn.pixabay.com/photo/2014/04/03/11/46/grass-312104_960_720.png" alt="" height="100px" width="60px">></div>
+        <div><img src="https://cdn.pixabay.com/photo/2014/04/03/11/46/grass-312104_960_720.png" alt="" height="100px" width="60px">></div>
+    </div>
+    <div class="grass2">
+        <div><img src="https://cdn.pixabay.com/photo/2014/04/03/11/46/grass-312104_960_720.png" alt="" height="100px" width="60px"></div>
+        <div><img src="https://cdn.pixabay.com/photo/2014/04/03/11/46/grass-312104_960_720.png" alt="" height="100px" width="60px">></div>
+        <div><img src="https://cdn.pixabay.com/photo/2014/04/03/11/46/grass-312104_960_720.png" alt="" height="100px" width="60px">></div>
+        <div><img src="https://cdn.pixabay.com/photo/2014/04/03/11/46/grass-312104_960_720.png" alt="" height="100px" width="60px">></div>
+    </div>
+
+</body>
+</html>

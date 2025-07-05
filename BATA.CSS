@@ -1,0 +1,34 @@
+
+#img{
+    height: 3000px;
+    width: 100% 100vh;
+    background-image: url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dwd9e3bcc8/pdf/Bata_Sale_3840x2160_13_Jan.jpg?sw=2560&q=80");
+    background-repeat: no-repeat,no-repeat;
+    background-size: 100% 100vh;
+}
+.img1{
+    height: 2000px;
+    width: 100% 100vh;
+    background-image: url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw58050a1a/menu/desk_editorials_banner_3_bata%20-%20men.jpg?sw=1280&q=80"),url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw6e8d489d/menu/desk_editorials_banner_2_bata%20-%20women.jpg?sw=1280&q=80"),url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw524bffbe/menu/desk_editorials_banner_4_kids_bata-1.jpg?sw=1280&q=80");
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-size: 2000px 2000px,2000px 2000px,2000px 2000px;
+    background-position: center left,center,center right;
+
+}
+.img2{
+    height: 3000px;
+    width: 100% 100vh;
+    background-image: url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw13388524/menu/NS-2-Editorial-banner-2-columns-Desktop-1920x2276.jpg?sw=1920&q=80"),url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw96279b22/menu/1920x2276-px-(Desktop-Banner).jpg?sw=1920&q=80");
+    background-repeat: no-repeat,no-repeat;
+    background-size: 50% 3000px,50% 3000px;
+    background-position: center left,center right;
+
+}
+.img3{
+    height: 10000px;
+    width: 100% 100vh;
+    background-image: url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dw3e103f57/images/tile/8396212_2.jpeg?sw=404"),url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dwaafc5b7b/images/tile/8714421_2.jpeg?sw=404"),url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dw7ecae831/images/tile/8597014_2.jpeg?sw=404"),url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dwfabcd990/images/tile/8516379_2.jpeg?sw=404"),url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dwfabcd990/images/tile/8516379_2.jpeg?sw=404");
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+    background-size: 1500px 1000px,1500px 1000px ,1500px 1000px, 1500px 1000px,1500px 1000px;
+    background-position: 5px 20px,1510px 20px ,3020px 20px, 4530px 20px
+}

@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    background-attachment: fixed;
+}
+nav>#two{
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    list-style: none;
+}
+nav>#three{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+#three>button{
+    background-color: rgba(228, 52, 52, 0.948);
+    border-style: none;
+    color: white;
+    padding: 15px 20px;
+}
+nav+video{
+    height: 500px;
+    width: 100%;
+    background-color: black;
+}
+#second{
+    height: 600px;
+    width: 100%;
+}
+#second>#s_one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+#s_one>#ss_one{
+    list-style: none;
+    margin: 0px 0px 0px 60px;
+    word-spacing: 5px;
+}
+#ss_two>button{
+    background-color: rgba(228, 52, 52, 0.948);
+    color: white;
+    border-style: none;
+    padding: 10px 20px;
+    margin-right: 60px;
+}
+#s_two{
+    height: 200px;
+    width: 85%;
+    display: flex;
+    /* background-color: aqua; */
+    margin: 50px 0px 0px 50px;
+}
+#s_two>#st_one{
+    height: 200px;
+    width: 400px;
+    background-color:white ;
+    padding:0px 0px 0px 50px;
+}
+#s_two>#st_two{
+    height: 200px;
+    width: 400px;
+    background-color:white ;
+    padding:0px 0px 0px 30px;
+}
+#s_two>#st_three{
+    height: 200px;
+    width: 400px;
+    background-color:white ;
+    padding:0px 0px 0px 30px;
+}
+#s_two>#st_four{
+    height: 200px;
+    width: 400px;
+    background-color:white ;
+    padding:0px 0px 0px 30px;
+}
+#third>#t_one{
+    height: 600px;
+    width: 100%;
+    background-image: url("https://nimbuscluster.blob.core.windows.net/server01/hrx/HRX/kabir.png") ;
+    background-repeat: no-repeat;
+    background-size:100% 600px;
+}
+#third>#t_two{
+    margin: -450px 0px 0px 950px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+#t_two>li{
+    line-height: 35px;
+}
+#t_two>p{
+    line-height: 25px;
+}
+
+#fourth{
+    height: 500px;
+    width: 100%;
+    background-color: rgba(228, 52, 52, 0.948);
+    margin: 270px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+#fourth>#f_one{
+    height: 500px;
+    width: 47%;
+    background-color: white;
+    margin: 0px 0px 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fourth>#f_two{
+    height: 500px;
+    width: 47%;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+}
+#fourth>#f_two>li{
+    width: 85%;
+    text-align: justify;
+    list-style: none;
+    line-height: 25px;
+}
+#fourth>#f_two>#ft_one{
+    display: flex;
+    justify-content:space-around;
+    margin: 20px 170px 0px 0px;
+    font-size: 35px;
+}
+#fourth>#f_two>#ft_two{
+    display: flex;
+}
+#fourth>#f_two>#ft_three>button{
+    background-color:rgba(228, 52, 52, 0.948);
+    border-style: none;
+    color: white;
+    padding: 10px 50px;
+    margin: 25px 0px 0px 55px;
+}
+
+#fifth>#fi_one{
+    width: 50%;
+    list-style: none;
+    color: white;
+    margin: -250px 0px 0px 380px;
+    line-height: 30px;
+}
+#fifth>#fi_two>button{
+    margin: 20px 0px 0px 645px;  
+    background-color: rgba(228, 52, 52, 0.948);
+    border-style: none;
+    color: white;
+    padding: 15px 45px;
+}

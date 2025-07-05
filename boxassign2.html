@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template with Box Model</title>
+    <style>
+
+        .about-us {
+            display: flex;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .about-us img {
+            width: 50%;
+            padding: 10px;
+        }
+
+        .about-us-content {
+            padding: 20px;
+            width: 50%;
+        }
+
+        .about-us-content h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        text-transform: capitalize;
+        }
+
+        .about-us-content p {
+            margin-bottom: 20px;
+            color: #333; 
+        }
+
+        .about-us-content button {
+            
+            padding: 10px 20PX;
+            background-color: black;
+            color: white;
+            
+        }
+
+        .about-us-content button:hover {
+            background-color: #444;
+        }
+        .classified {
+            text-align: center;
+            padding: 20px;
+            background-color: antiquewhite;
+        }
+
+        .classified h1 {
+            margin-bottom: 1px;
+            text-transform: uppercase;
+        }
+
+        .classified h1 span {
+            color:blue;
+            padding-bottom: 1000PX;
+            text-transform: uppercase;
+        }
+
+    
+        .features {
+            margin-top: 20px;
+            background-color: #444;
+        }
+
+        .feature-item {
+            display: flex;
+            padding: 20px;
+            background-color:antiquewhite;
+        }
+
+        .feature-item .number {
+            font-size: 100px;
+            font-weight: bold;
+            padding-left: 100PX;
+            color:blue;
+        }
+
+        .feature-item .content {
+            width: calc(100% - 50px);
+            padding-right: 50PX;
+        }
+
+        .feature-item .content  {
+            margin-bottom: 10px;
+            color:blue; 
+        }
+
+        .feature-item .content  {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about-us">
+        <img src="/cssimga/cs1.jpg" alt="About Us Image" height="400px" width="80px">
+        <div class="about-us-content">
+            <h2>ABOUT <FONt COLOR="BLUE">US</FONt></h2>
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+            </p>
+           <PRE>                                             <button>Read More</button>             </PRE>
+        </div>
+    </div>
+
+    <div class="classified">
+        <h1>One of the Best <span>Classified</span></h1>
+    </div>
+<div class="features">
+        <div class="feature-item">
+            <div class="number">01.</div>
+            <div class="content">
+                <h2>Front End Multicurrency</h2>
+                <p>
+                    using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                </p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="number">02.</div>
+            <div class="content">
+                <h2>Most Intelligent Search System</h2>
+                <p>
+                    using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                </p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="number"> 03.</div>
+            <div class="content">
+                <h2>Most Intelligent Search System</h2>
+                <p>
+                    using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
