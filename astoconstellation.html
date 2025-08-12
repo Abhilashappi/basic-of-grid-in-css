@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="short icon" href="https://c0.wallpaperflare.com/preview/345/432/905/astronomy-constellation-dark-galaxy.jpg"type="imyage/x-icon">
+</head>
+    <style>
+      * {
+    margin: 4px 4px 2px 4px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header {
+    width: 100vw;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(20,20,40,0.85), rgba(20,20,40,0.85)),
+        url("https://c0.wallpaperflare.com/preview/345/432/905/astronomy-constellation-dark-galaxy.jpg") center/cover no-repeat;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    margin: 0;
+    padding: 0 0 10px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    margin: 0;
+    padding: 0 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 40px;
+    background: transparent;
+    position: static;
+}
+
+#logo {
+    font-size: 2.5rem;
+    color: teal;
+    margin-right: 40px;
+    position: static;
+    text-align: left;
+}
+
+nav li {
+    list-style: none;
+    padding: 0 18px;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+}
+
+nav input[type="text"] {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+    margin-left: 18px;
+    font-size: 1rem;
+}
+
+li {
+    list-style: none;
+    padding-right: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+}
+
+header {
+    width: 95%;
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-image: url("https://c0.wallpaperflare.com/preview/345/432/905/astronomy-constellation-dark-galaxy.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#logo {
+    text-align: start;
+    position: relative;
+    right: 420px;
+}
+
+#grid-container {
+    height: 2000px;
+    width: 1800px;
+    background-image: url("https://e0.pxfuel.com/wallpapers/283/413/desktop-wallpaper-space-super-cool-space.jpg");
+    background-repeat: no-repeat;
+    background-size: 2000px 100%;
+    position: absolute;
+    left: 30px;
+    top: 140px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(4, 350px);
+    row-gap: 8px;
+    column-gap: 1px;
+}
+
+.items {
+    height: 700px;
+    background-color: rgba(255, 255, 255, 0.05); /* fixed invalid rgb syntax */
+    color: black;
+    border: 1px solid burlywood;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px burlywood;
+}
+
+button {
+    background-color: lightskyblue;
+    color: cornsilk;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+}
+
+#grid-items1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+#grid-items2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+#grid-items3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+#grid-items4 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+#grid-items5 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+}
+
+#grid-items6 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+}
+
+#grid-items7 {
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+}
+
+#grid-items8 {
+    grid-column: 1 / 3;
+    grid-row: 5 / 7;
+    height: 450px;
+}
+
+#grid-items9 {
+    grid-column: 3 / 5;
+    grid-row: 5 / 7;
+    height: 450px;
+}
+
+#su {
+    position: relative;
+    bottom: 30px;
+}
+
+#su:hover {
+    background-color: transparent;
+}
+
+#ur {
+    position: relative;
+    top: 40px;
+}
+
+#ur:hover {
+    background-color: transparent;
+}
+
+#ca {
+    position: relative;
+}
+
+#aq {
+    position: relative;
+    bottom: 45px;
+}
+
+#cap {
+    position: relative;
+    bottom: 45px;
+}
+
+footer {
+    width: 1800px;
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    text-indent: 30px;
+    text-align: justify;
+    text-transform: inherit;
+    word-spacing: 3px;
+}
+
+    </style>
+</head>
+<body>
+ <header>
+    <header class="container">
+        
+        <nav>
+            <div id="logo"><font style="font-size: 40px; color: teal;">astro</font> <font style="font-size: 35PX; color:khaki">Constellation</font> </div>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">gallery</a></li>
+            <li><a href="">help</a></li>
+            <input type="text"placeholder="Search">
+        </nav>
+        
+    </header>
+
+
+    <div id="grid-container">
+        <div id="grid-items1" class="items" >
+            <a href=""><h1><font col><i><b>Orion - The Hunter</b></i></font></h1>
+                <img src="https://media.istockphoto.com/id/1133264756/vector/orion-the-hunter-constellation-on-a-starry-sky-illustration.jpg?s=612x612&w=0&k=20&c=ojvx9EwT9U2ddZfqUokruGArOGJarT0JZYpcvwAb3d4=" alt="Constellation 1"  height="300px" width="400px">
+                <font color="white"><p>Orion is most prominent during winter evenings in the Northern Hemisphere, as are five other constellations that have stars in the Winter Hexagon asterism. Orion's two brightest stars, Rigel (β) and Betelgeuse (α), are both among the brightest stars in the night sky; both are supergiants and slightly variable. There are a further six stars brighter than magnitude 3.0, including three making the short straight line of the Orion's Belt asterism. Orion also hosts the radiant of the annual Orionids, the strongest meteor shower associated with Halley's Comet, and the Orion Nebula, one of the brightest nebulae in the sky.</p></font></a>
+                <BR></BR>
+                <button><b><i>READ More</i></b></button>
+                
+        </div>
+        <div id="grid-items2" class="items">
+            <a href=""><h1><font col><i><b>Ursa Major-The Great Bear</b></i></font></h1>
+                <img src="https://qph.cf2.quoracdn.net/main-qimg-d7f5e1c4332f421141b97b86a59f5364-lq" alt="Constellation 1"  height="300px" width="400px">
+                <font color="white"><p>Ursa Major is primarily known from the asterism of its main seven stars, which has been called the "Big Dipper", "the Wagon", "Charles's Wain", or "the Plough", among other names. In particular, the Big Dipper's stellar configuration mimics the shape of the "Little Dipper". Two of its stars, named Dubhe and Merak (α Ursae Majoris and β Ursae Majoris), can be used as the navigational pointer towards the place of the current northern pole star, Polaris in Ursa Minor.current northern pole star, Polaris in Ursa Minor.</p></font></a>
+                <BR></BR>
+                <button id="ur"><b><i>READ More</i></b></button>
+        </div>
+        <div id="grid-items3" class="items">
+            <a href=""><h1><font col><i><b>corpius - The Scorpion</b></i></font></h1>
+                <img src="https://media.istockphoto.com/id/926119828/vector/sign-zodiac-scorpio-night-sky-background-realistic.jpg?s=612x612&w=0&k=20&c=oXgf4Z6yLYsJPzq3EHsutmKFM7L8mL4k-5MhretdM5M=" alt="Constellation 1"  height="300px" width="400px">
+                <font color="white"><p>In Greek mythology, several myths associated with Scorpius attribute it to Orion. According to one version, Orion boasted to the goddess Artemis and her mother, Leto, that he would kill every animal on Earth. Artemis and Leto sent a scorpion to kill Orion.[13] Their battle caught the attention of Zeus, who raised both combatants to the sky to serve as a reminder for mortals to curb their excessive pride. In another version of the myth, Artemis' twin brother, Apollo, was the one who sent the scorpion to kill Orion after the hunter earned the goddess' favor by admitting she was better than him. After Zeus raised Orion and the scorpion to the sky, the former hunts every winter but flees every summer when the scorpion comes. In both versions, </p></font></a>
+                <BR></BR>
+                <button id="su"><b><i>READ More</i></b></button>
+        </div>
+        <div id="grid-items4" class="items">
+            <a href=""><h1><font col><i><b>Camelopardalis</b></i></font></h1>
+                <img src="https://www.universetoday.com/wp-content/uploads/2008/10/girafe-e1470418810854.jpg" alt="Constellation 1"  height="300px" width="400px">
+                <font color="white"><p>Camelopardalis is not one of Ptolemy's 48 constellations in the Almagest.[17] It was created by Petrus Plancius in 1613.[1] It first appeared in a globe designed by him and produced by Pieter van den Keere. One year later, Jakob Bartsch featured it in his atlas. Johannes Hevelius depicted this constellation in his works which were so influential that it was referred to as Camelopardali Hevelii or abbreviated as Camelopard. Hevel.
+
+                    Part of the constellation was hived off to form the constellation Sciurus Volans, the Flying Squirrel, by William Croswell in 1810. However this was not taken up by later cartographers </p></font></a>
+                <BR></BR>
+                <button id="ca"><b><i>READ More</i></b></button>
+        </div>
+        <div id="grid-items5" class="items">
+            <a href=""><h1><font col><i><b>Aquarius</b></i></font></h1>
+                <img src="https://www.unistellar.com/wp-content/uploads/2022/10/aquarius-constellation.png" alt="Constellation 1"  height="300px" width="400px">
+                <font color="white"><p>In Greek mythology, Aquarius is sometimes associated with Deucalion, the son of Prometheus who built a ship with his wife Pyrrha to survive an imminent flood. They sailed for nine days before washing ashore on Mount Parnassus.[3][6] Aquarius is also sometimes identified with beautiful Ganymede, a youth in Greek mythology and the son of Trojan king Tros, who was taken to Mount Olympus by Zeus to act as cup-carrier to the gods.[7][8][6] Neighboring Aquila represents the eagle, under Zeus' command, that snatched the young boy;[9] some versions of the myth indicate that the eagle was in fact Zeus transformed. One tradition, stated that he was carried off by Eos.[10] Yet another figure associated with the water bearer is Cecrops I, a king of Athens who sacrificed water instead of wine to the gods. </p></font></a>
+                <BR></BR>
+                <button id="aq"><b><i>READ More</i></b></button>
+        </div>
+         <div id="grid-items6" class="items">
+            <a href=""><h1><font col><i><b>Capricornious</b></i></font></h1>
+                <img src="https://earthsky.org/upl/2017/08/Capricornus_Stellarium-e1629117822562.jpg" alt="Constellation 1"  height="300px" width="400px">
+                <font color="white"><p> with a magnitude of 2.9, located 39 light-years from Earth. Like several other stars such as Denebola and Deneb, it is named for the Arabic word for "tail or end" (deneb) and “young goat / kid” (al-gedi); its traditional name means "tail to head” or “back to the beginning", which could be related to the Ouroboros or Janus since the zodiac relates to January. Deneb Algedi is a Beta Lyrae variable star (a type of eclipsing binary). It ranges by about 0.2 magnitudes with a period of 24.5 hours 
+                    Capricorni is accompanied by a star of magnitude 11.0; this faint star is itself a binary star with two components of magnitude 11. Also called Algedi or Giedi, the traditional names of α Capricorni come from the Arabic word for "the kid", which references the constellation's mythology </p></font></a>
+                <BR></BR>
+                <button id="cap"><b><i>READ More</i></b></button>
+         </div>
+        <div id="grid-items7" class="items">
+            <a href=""><h1><font col><i><b>constellation stars</b></i></font></h1>
+                <img src="https://sleepopolis.com/wp-content/uploads/2019/04/88-constellations-brightest-stars-7_thumb.png" alt="Constellation 1"  height="490px" width="800PX">
+                <font color="white"><p> A constellation is an area on the celestial sphere in which a group of visible stars forms a perceived pattern or outline, typically representing an animal, mythological subject, or inanimate object </p></font></a>
+                <BR></BR>
+                <button id="con"><b><i>READ More</i></b></button>
+
+        </div>
+        <div id="grid-items8" class="items">
+            <a href=""><h1><font col><i><b>GALLAXY</b></i></font></h1>
+            <font color="white"><p>  A galaxy is a system of stars, stellar remnants, interstellar gas, dust, and dark matter bound together by gravity.[1][2] The word is derived from the Greek galaxias (γαλαξίας), literally 'milky', a reference to the Milky Way galaxy that contains the Solar System. Galaxies, averaging an estimated 100 million stars,[3] range in size from dwarfs with less than a thousand stars,[4] to the largest galaxies known – supergiants with one hundred trillion stars, each orbiting its galaxy's centre of mass. Most of the mass in a typical galaxy is in the form of dark matter, with only a few per cent of that mass visible in the form of stars and nebulae. Supermassive black holes are a common feature at the centres of galaxies.The space between galaxies is filled with a tenuous gas (the intergalactic medium) with an average density of less than one atom per cubic metre. Most galaxies are gravitationally organised into groups, clusters and superclusters. The Milky Way is part of the Local Group, which it dominates along with the Andromeda Galaxy. The group is part of the Virgo Supercluster. At the largest scale, these associations are generally arranged into sheets and filaments surrounded by immense voids.[13] Both the Local Group and the Virgo Supercluster are contained in a much larger cosmic structure named Laniakea.Galaxies were initially discovered telescopically and were known as spiral nebulae. Most 18th- to 19th-century astronomers considered them as either unresolved star clusters or extragalactic nebulae,[citation needed] and were just thought of as a part of the Milky Way, but their true composition and natures remained a mystery. Observations using larger telescopes of a few nearby bright galaxies, like the Andromeda Galaxy, </p></font></a>
+            <BR></BR>
+                
+                <button id="su"><b><i>READ More</i></b></button>
+        </div> 
+        <div id="grid-items9" class="items">
+            <img src="https://applescoop.org/image/wallpapers/mac/panels-of-galaxies-in-different-colors-top-rated-most-downloaded-free-download-wallpapers-for-macbook-pro-and-macbook-air-and-microsoft-windows-desktop-pcs-4k-07-12-2024-1733638724-hd-wallpaper.webp" alt=""  height="430px" width="800px">
+        </div>
+        </div>
+</main> 
+<footer>
+    <p>© 2025 Astro Constellations. All rights reserved.</p>
+</footer>
+</body>
+</html>
